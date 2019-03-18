@@ -1,0 +1,13 @@
+{{student | json}}
+
+<div>
+  <form class="col-md-4 col-xs-12">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input [(ngModel)]="studentModel.name" name="name" type="text" class="form-control" placeholder="Name">
+    </div>
+    <button (click)="add()" type="button" class="btn btn-primary">Add Student</button>
+  </form>
+  </div>
+
+<router-outlet></router-outlet>
